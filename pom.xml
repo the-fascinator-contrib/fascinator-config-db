@@ -24,6 +24,7 @@
             <artifactId>fascinator-portal</artifactId>
             <version>${fascinator.version}</version>
             <type>warpath</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.googlecode.the-fascinator</groupId>
@@ -31,6 +32,7 @@
             <version>${fascinator.version}</version>
             <classifier>classes</classifier>
             <type>jar</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.mortbay.jetty</groupId>
