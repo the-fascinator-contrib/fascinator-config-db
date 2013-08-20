@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.googlecode.the-fascinator.plugins</groupId>
+    <groupId>com.googlecode.the-fascinator</groupId>
     <artifactId>fascinator-config-db</artifactId>
     <version>0.1-SNAPSHOT</version>
 	<parent>
@@ -35,9 +35,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.mortbay.jetty</groupId>
-            <artifactId>jetty-ajp</artifactId>
-            <version>6.1.24</version>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1</version>
         </dependency>
         <dependency>
 			<groupId>org.hibernate</groupId>
