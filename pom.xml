@@ -72,6 +72,18 @@
             <version>3.0.5.RELEASE</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.googlecode.the-fascinator.plugins</groupId>
+    		<artifactId>plugin-access-derby</artifactId>
+    		<version>${fascinator.version}</version>
+    		<scope>test</scope>
+    	</dependency>
+    	<dependency>
+            <groupId>com.googlecode.the-fascinator.plugins</groupId>
+    		<artifactId>plugin-storage-filesystem</artifactId>
+    		<version>${fascinator.version}</version>
+    		<scope>test</scope>
+    	</dependency>
     </dependencies>
 
     <build>
