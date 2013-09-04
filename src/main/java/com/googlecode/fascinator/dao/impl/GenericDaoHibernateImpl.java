@@ -21,6 +21,8 @@
 package com.googlecode.fascinator.dao.impl;
 
 import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -32,7 +34,9 @@ import com.googlecode.fascinator.dao.GenericDao;
 public class GenericDaoHibernateImpl<T, PK extends Serializable> implements
 		GenericDao<T, PK> {
 
-	private Class<T> type;
+	protected Class<T> type;
+	protected Map<String, String> queryMap;
+	
 	@Autowired
 	private SessionFactory sessionFactory;
 
@@ -67,5 +71,16 @@ public class GenericDaoHibernateImpl<T, PK extends Serializable> implements
 
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
+	}
+
+	@Override
+	public void setQueryMap(Map<String, String> queryMap) {	
+		this.queryMap = queryMap;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<T> query(String name, Map<String, Object> properties) {
+		return getSession().createQuery(queryMap.get(name)).setProperties(properties).list();
 	}
 }

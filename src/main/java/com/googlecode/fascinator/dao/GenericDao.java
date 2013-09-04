@@ -21,6 +21,8 @@
 package com.googlecode.fascinator.dao;
 
 import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
 
 public interface GenericDao <T, PK extends Serializable> {
 
@@ -37,4 +39,10 @@ public interface GenericDao <T, PK extends Serializable> {
 
     /** Remove an object from persistent storage in the database */
     void delete(T persistentObject);
+    
+    /** Set the query map */
+    void setQueryMap(Map<String, String> queryMap);
+    
+    /** Execute the named query, passing the params */
+    List<T> query(String name, Map<String, Object> properties);
 }
