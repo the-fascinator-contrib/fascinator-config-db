@@ -80,6 +80,7 @@ public class GenericDaoHibernateImpl<T, PK extends Serializable> implements
 
 	@SuppressWarnings("unchecked")
 	@Override
+	@Transactional
 	public List<T> query(String name, Map<String, Object> properties) {
 		return getSession().createQuery(queryMap.get(name)).setProperties(properties).list();
 	}
