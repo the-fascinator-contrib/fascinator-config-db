@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.googlecode.the-fascinator</groupId>
     <artifactId>fascinator-config-db</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
 	<parent>
    		 <artifactId>organisation</artifactId>
 	    <groupId>com.googlecode.the-fascinator</groupId>
@@ -22,7 +20,7 @@
     <dependency>
             <groupId>com.googlecode.the-fascinator</groupId>
     <artifactId>fascinator-common</artifactId>
-            <version>${fascinator.version}</version>
+            <version>1.2</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
@@ -65,19 +63,19 @@
         <dependency>
             <groupId>com.googlecode.the-fascinator.plugins</groupId>
     		<artifactId>plugin-access-derby</artifactId>
-    		<version>${fascinator.version}</version>
+    		<version>1.2</version>
     		<scope>test</scope>
     	</dependency>
     	<dependency>
             <groupId>com.googlecode.the-fascinator.plugins</groupId>
     		<artifactId>plugin-indexer-solr</artifactId>
-    		<version>${fascinator.version}</version>
+    		<version>1.2</version>
     		<scope>test</scope>
     	</dependency>
     	<dependency>
             <groupId>com.googlecode.the-fascinator.plugins</groupId>
     		<artifactId>plugin-storage-filesystem</artifactId>
-    		<version>${fascinator.version}</version>
+    		<version>1.2</version>
     		<scope>test</scope>
     		<exclusions>
      			<exclusion>
@@ -174,7 +172,7 @@
         								</goals>
         							</pluginExecutionFilter>
         							<action>
-        								<ignore></ignore>
+        								<ignore />
         							</action>
         						</pluginExecution>
         					</pluginExecutions>
@@ -189,7 +187,7 @@
 		<url>scm:git://github.com/the-fascinator-contrib/fascinator-config-db.git</url>
 		<connection>scm:git://github.com/the-fascinator-contrib/fascinator-config-db.git</connection>
 		<developerConnection>scm:git:https://github.com/the-fascinator-contrib/fascinator-config-db.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>fascinator-config-db-0.1</tag>
 	</scm>
 
 </project>
