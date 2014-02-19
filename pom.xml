@@ -4,7 +4,7 @@
 
     <groupId>com.googlecode.the-fascinator</groupId>
     <artifactId>fascinator-config-db</artifactId>
-    <version>0.1</version>
+    <version>0.2-SNAPSHOT</version>
 	<parent>
    		 <artifactId>organisation</artifactId>
 	    <groupId>com.googlecode.the-fascinator</groupId>
@@ -187,7 +187,7 @@
 		<url>scm:git://github.com/the-fascinator-contrib/fascinator-config-db.git</url>
 		<connection>scm:git://github.com/the-fascinator-contrib/fascinator-config-db.git</connection>
 		<developerConnection>scm:git:https://github.com/the-fascinator-contrib/fascinator-config-db.git</developerConnection>
-		<tag>fascinator-config-db-0.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 </project>
