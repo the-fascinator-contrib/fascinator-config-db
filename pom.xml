@@ -4,7 +4,7 @@
 
     <groupId>com.googlecode.the-fascinator</groupId>
     <artifactId>fascinator-config-db</artifactId>
-    <version>0.3</version>
+    <version>0.4-SNAPSHOT</version>
 	<parent>
    		 <artifactId>organisation</artifactId>
 	    <groupId>com.googlecode.the-fascinator</groupId>
